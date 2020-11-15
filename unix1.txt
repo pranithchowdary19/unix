@@ -1,0 +1,107 @@
+UNIX:- It is an operating system. that created in 1960.
+
+Charcteristics of UNIX:
+-----------------------
+1. It is a freeware.              - |
+                                    |---(FOSS)-->Freeware and open source software.         
+2. It is a open source software.  - |
+3. It is multi user OS.
+4. It is multi tasking OS.
+5. It is user friendly and supports both CUI and GUI.
+   CUI-->Command line interface.
+   GUI-->Graphical user interface.
+6. It is more secure than windows OS.
+
+Flavous of UNIX:
+---------------
+-->As UNIX is open source operating system, multiple flavors are available with lot of extensions and improvements.
+Eg:- Ubuntu, Redhat Linux,CentOS,Fedora,Kali,suse ETC.
+
+Components of UNIX:- There are two types of components.
+-------------------
+1. Shell
+2. Kernel
+
+
+1. Shell:
+--------
+--> It is an outer layer of UNIX OS.
+--> The user can communicate with shell only.
+--> Shell reads the command provided by user.
+--> Shell will verify is it vaild command or not.
+--> if everything is fine,then shell converts that command into kernel understandable form and handover to kernel.
+-->Shell acts as interface between user and kernel.
+
+2. Kernel:
+---------
+--> It is core component of UNIX OS.
+--> It is reponsible to execute our commands with the help of hardware components.
+--> it is responsible for memory allocation and processor allocation.
+--> it acts as interface between shell and hardware components.
+
+Command Exection Flow:
+----------------------
+1. Normal user ---> $ prompt.
+2. Super user or Root user ---> # prompt.
+
+sudo -i ---> this command is used to switch to super user.
+
+Basic commands:
+--------------
+1.  pwd   --> It shows current working directory.(print working directory)
+2.  ls    --> It listout all files and directories.
+3.  mkdir --> To create a working directory.
+4.  cd    --> Change directory.
+5.  touch --> To create a empty file.
+6.  rmdir --> To remove directory.
+7.  rm    --> To remove a file.
+8.  cal   --> To display current month calender.
+9.  date  --> Display current date and time.
+10. help  --> It will listout available commands.
+11. clear --> To clear the terminal.
+12. exit  --> To logout session.
+13. hello --> To display brief system information.
+
+
+LINUX FILE SYSTEM:
+------------------
+-->Types of files in linux:- there are three types of files.
+   -----------------------
+**In linux everything is treated as file.
+1. Normal files
+2. Directory files
+3. Device files
+
+1. Normal files:- These files contains data. it can be a normal files or binary files(image,video,audio files etc).
+2. Directory file:- These files represent directories.
+                 -->Directory contains files and sub directories.
+3.Device files:- In linux every device is represented as a file. every device means terminal,motherboard and etc.
+              -->tty to represent the terminals.
+	      -->to communicate with other terminals we use this
+	      -->echo "message" > /dev/pty1
+              --> (>)---> this symbol represents the output redirections.
+
+	      -->mv command is used to rename the file.
+	      Eg:- mv unix1.txt unix.sh
+-->in linux there is a file command to check file type.
+Syntax:- file filename---->it tells file type.
+Eg:- file unix1.
+
+How to check file types:
+-----------------------
+--> in ubuntu blue colour files represents directories.
+
+
+-->To know the file type we use this command.
+Eg:- ls -l
+--> -l means long listing.
+
+-->The first charcter represents the type of file.
+1. d---> it means directory file.
+2. (-)--> it means normal file.
+3. l --> it means link file.
+4. c --> charcter special file.
+5. b --> block special file.
+6. s --> socket file.
+
+
