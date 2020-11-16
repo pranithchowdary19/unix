@@ -105,3 +105,115 @@ Eg:- ls -l
 6. s --> socket file.
 
 
+--> ls -a----> to listout all files including hidden files.
+--> (-a)--> it means all.
+--> every directory contains two hidden directories.
+  1. (.)---> represents current directory.
+  2. (..)---> represents parent directory.
+  3. (cd ~)---> it switches user home directory.
+
+
+Linux File System Hierarchy:
+----------------------------
+--> Linux file system has TREE like structure.
+--> it starts with root directory (/).
+-->(/--->root directory)--is a topmost directory.
+
+1. Bin directory:
+-----------------
+--> BIN means binary.
+--> bin directory contains all binary executables related to our linux commands.
+
+2. Sbin directory:
+-----------------
+--> Sbin means system-bin or secondary-bin.
+-->Sbin commands are used by super user only.
+-->Normal user uses commands related to binary executables files available in bin directory.
+-->Super user uses commands related to binary executables files available in bin directory.
+
+Diff b/w bin and sbin:
+----------------------
+** Bin contains binary executable related commands used by normal user.
+** Sbin contains binary executable related commands used by super user.
+
+3. ETC directory:
+-----------------
+--> This directory contains all system configurations.
+--> These configurations are used by operating system itself.
+Eg:- cd /etc
+     cat passwd--->it shows all user information
+     cat hosts--->it shows all hosts information.
+
+4. Tmp directory:
+-----------------
+--> tmp means temporary
+--> if any file are directory required for temporary purpose in our current session and these files will we deleted 
+automatically at the time of system shut down.
+
+5. Dev directory:
+-----------------
+--> Dev means device.
+-->Every device in linux is treated as file.
+-->All these device related files will be stored inside dev directory.
+-->By using these files we can communicate with that devices.
+
+Eg:- 1. tty----> terminal related file.
+     2. fd ----> flopy drive related file.
+     3. hd ----> hard disk related file.
+     4. ram ---> ram related file.
+     5. stdin---> standard input device file(keyboard).
+     6.stdout---> standard output device(terminal,monitor).
+     7.stderr---> standard error device(terminal,monitor).
+
+6. mnt directory:
+-----------------
+-->mnt means mounting.
+-->mnt directory contains files which is available because of manual mounting.
+
+7. Media directory:
+-------------------
+-->The files of automatic mounting will be placed inside media directory.
+
+diff b/w mnt and media directories:
+-----------------------------------
+-->mnt-----> contains manual mounting files.
+-->media---> contains automatic mounting files.
+
+8. opt directory:
+-----------------
+-->opt means optional
+-->This directory contains all third party software installation files.
+
+9. lib directory:
+-----------------
+-->lib means library.
+-->this libraries which are required by our commands and applications.
+
+10. var directory:
+-----------------
+-->var means variable data.
+-->if any data which is keep on changing such type of variable data will be stored inside var directory.
+Eg:- log files.
+
+11. usr directory:
+------------------
+--> usr means user.
+--> this directory contains all user related softwares.
+
+12. home directory:
+-------------------
+-->As linux is a multi user operating system.
+-->All these user directories will be stored inside the home directory.
+
+13. proc directory:
+------------------
+-->proc means process.
+-->in linux multiple processes running simultaneously. for each process a unique id will be there : pid.
+
+14. boot directory:
+-------------------
+-->the files which are required to boot linux os.
+
+
+
+
